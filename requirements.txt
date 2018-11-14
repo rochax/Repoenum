@@ -1,0 +1,15 @@
+setuptools
+wheel
+beautifulsoup4
+six
+future
+tableprint
+shodan
+maxminddb
+plotly
+pandas
+dash_table_experiments
+dash_core_components
+dash==0.28.5  # The core dash backend
+dash-html-components==0.13.2  # HTML components
+dash-core-components==0.36.0  # Supercharged components
