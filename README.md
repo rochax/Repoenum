@@ -13,12 +13,7 @@
 	  ███    ███
 
 
-```
- + Autor: Leandro Rocha
- + Github: https://github.com/rochax
- + Twitter: https://twitter.com/rhc4_
-```
-## WARNING
+## WARNING ##
 ```
  +---------------------------------------------------+
  | DEVELOPERS ASSUME NO LIABILITY AND ARE NOT        |
@@ -26,11 +21,11 @@
  | THIS PROGRAM                                      |
  +---------------------------------------------------+
 ```
-### DESCRIPTION
+### DESCRIPTION ###
 ```
 Repoenum is a tool for automating the enumeration of possibly misconfigured Gitlab repositories.
 ```
-### INSTALL
+### INSTALL ###
 ```
 $ git clone https://github.com/rochax/Repoenum
 
@@ -38,7 +33,7 @@ $ cd Repoenum
 
 ~/Repoenum $ pip install -r requirements.txt
 ```
-### REQUIRIMENTS
+### REQUIRIMENTS ###
 ```
 setuptools
 wheel
@@ -52,11 +47,10 @@ plotly
 pandas
 dash_table_experiments
 dash_core_components
-dash==0.28.5  # The core dash backend
-dash-html-components==0.13.2  # HTML components
-dash-core-components==0.36.0  # Supercharged components
+dash==0.28.5
+dash-html-components==0.13.2
 ```
-### USAGE
+### USAGE ###
 ```
     Usage: ./repoenum.py [options]
 
@@ -65,7 +59,7 @@ dash-core-components==0.36.0  # Supercharged components
     -l', 	'Limit the server amount. Use after -s or -f option')
     -g', 	'Generate live table')
 ```
-### EXAMPLE
+### EXAMPLE ###
 Enumeration from a csv file limited to 10 lines or repositories
 ```
 repoenum.py -f /home/user/repos_servers.csv -l 10
@@ -74,4 +68,14 @@ Enumeration from your shodan KEY API limited to 50 rows or repositories
 ```
 repoenum.py -s "API KEY" -l 50
 ```
+### Grabbing Gitlab Servers exposed ###
+```
+[+] SHODAN: http://shodan.io/search?query=title%3Agitlab
+
+[+] CENSYS: https://censys.io/ipv4?q=80.http.get.title%3Agitlab
+
+[+] Google Dorks: intitle:gitlab inurl:explore -gitlab.com/explore
+
+```
+
 
