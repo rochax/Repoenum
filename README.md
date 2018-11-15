@@ -60,13 +60,13 @@ dash-html-components==0.13.2
     -g', 	'Generate live table')
 ```
 ### EXAMPLE ###
-Enumeration from a csv file limited to 10 lines or repositories
+Using a csv file to enumerate all repositories from the list. 
 ```
-repoenum.py -f /home/user/repos_servers.csv -l 10
+repoenum.py -f repos_servers.csv
 ```
-Enumeration from your shodan KEY API limited to 50 rows or repositories
+Using a shodan API Key to enumerate just 50 repositories from the list. 
 ```
-repoenum.py -s "API KEY" -l 50
+repoenum.py -s "SHODAN API KEY" -l 50
 ```
 ### Grabbing Gitlab Servers exposed ###
 ```
