@@ -23,7 +23,7 @@
 ```
 ### DESCRIPTION ###
 ```
-Repoenum is a tool for automating the enumeration of possibly misconfigured Gitlab repositories.
+Repoenum is a tool for enumeration Gitlab repositories misconfigured and that possibly expose sensitive data.
 ```
 ### INSTALL ###
 ```
@@ -77,5 +77,6 @@ repoenum.py -s "API KEY" -l 50
 [+] Google Dorks: intitle:gitlab inurl:explore -gitlab.com/explore
 
 ```
-
+##### Thnaks for help #####
+[Fernando A. Damião](https://github.com/fadamiao)
 
